@@ -33,7 +33,7 @@
 #endif
 
 #ifndef INDEX_URL
-#define INDEX_URL "https://www.pxt.io/"
+#define INDEX_URL "https://en.wikipedia.org/wiki/RS-422/"
 #endif
 
 #include "uf2_version.h"
