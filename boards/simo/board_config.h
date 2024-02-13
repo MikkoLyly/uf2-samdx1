@@ -10,6 +10,8 @@
 #define USB_VID 0x04D8
 #define USB_PID 0xE5EE
 
+#define INDEX_URL "https://en.wikipedia.org/wiki/RS-422"
+
 #define LED_PIN PIN_PA17
 #define LED_TX_PIN PIN_PA27 // NC
 #define LED_RX_PIN PIN_PB03 // NC
