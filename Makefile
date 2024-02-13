@@ -96,8 +96,9 @@ EXECUTABLE=$(BUILD_PATH)/$(NAME).bin
 SELF_EXECUTABLE=$(BUILD_PATH)/update-$(NAME).uf2
 SELF_EXECUTABLE_INO=$(BUILD_PATH)/update-$(NAME).ino
 
-SUBMODULES = lib/uf2/README.md
+# SUBMODULES = lib/uf2/README.md
 
+# all: $(SUBMODULES) dirs $(EXECUTABLE) $(SELF_EXECUTABLE)
 all: $(SUBMODULES) dirs $(EXECUTABLE) $(SELF_EXECUTABLE)
 
 r: run
@@ -228,5 +229,5 @@ all-boards:
 
 drop: all-boards drop-pkg
 
-$(SUBMODULES):
-	git submodule update --init --recursive
+#$(SUBMODULES):
+#	git submodule update --init --recursive
