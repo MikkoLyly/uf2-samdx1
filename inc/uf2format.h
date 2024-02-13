@@ -75,7 +75,8 @@ static inline bool is_uf2_block(void *data) {
 }
 
 static inline bool in_uf2_bootloader_space(const void *addr) {
-    return 0xb4 <= (uint32_t)addr && (uint32_t)addr < APP_START_ADDRESS;
+  // 13.2.2024: uint32_t -> uint64_t
+  return 0xb4 <= (uint64_t)addr && (uint64_t)addr < APP_START_ADDRESS;
 }
 
 static inline const char *uf2_info(void) {
